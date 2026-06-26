@@ -1,4 +1,5 @@
-# Input from user
+# Pizza Distribution Scenario
+
 total_slices = int(input("Enter total pizza slices: "))
 children = int(input("Enter number of children: "))
 
