@@ -1,5 +1,6 @@
 # University Scholarship System
 
+
 percentage = float(input("Percentage: "))
 income = float(input("Family Income: "))
 discipline = input("Disciplinary Action (Y/N): ").upper()
