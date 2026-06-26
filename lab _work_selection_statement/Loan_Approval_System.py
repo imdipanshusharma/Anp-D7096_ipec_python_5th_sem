@@ -8,6 +8,8 @@ Conditions:
 • Only one condition fails → Manual Review  
 • More than one condition fails → Rejected
 ----------------------------------------  
+#input from user
+
 Sample Input 
 Enter Credit Score: 780 
 Enter Annual Income: 750000 
