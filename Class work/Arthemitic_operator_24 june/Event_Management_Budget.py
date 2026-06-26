@@ -1,3 +1,4 @@
+# Event Management Budget
 """Write a Python program to calculate how much each participant should pay. """
 total_event_cost = float(input("Enter total event cost = "))
 number_of_participants = int(input("Enter number of participants = "))
