@@ -1,4 +1,5 @@
 '''Smart Electricity Billing System 
+
 Problem Statement 
 Calculate electricity bill using: 
 Units Rate 
