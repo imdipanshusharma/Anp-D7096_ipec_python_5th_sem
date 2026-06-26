@@ -1,3 +1,4 @@
+# Grocery Store Bill Calculation
 price = float(input("Enter price per packet: "))
 packets = int(input("Enter number of packets: "))
 
