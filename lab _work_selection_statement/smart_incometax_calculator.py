@@ -3,6 +3,8 @@
 ------₹5,00,001 to ₹10,00,000 → 10% ------
 ------₹10,00,001 to ₹20,00,000 → 20%------
 ------Above ₹20,00,000 → 30%-----
+#additional benefits:
+
 
 -------------------- Additional Benefits:---------------
 ---- Senior citizens (Age ≥ 60) receive a 5% rebate on tax-----
@@ -17,7 +19,7 @@
 # Government Tax Calculator
 
 income = float(input("Enter Annual Income: "))
-age = int(input("Enter Age: "))
+age = float(input("Enter Age: "))
 gender = input("Enter Gender (M/F): ").upper()
 
 # Calculate tax based on income
