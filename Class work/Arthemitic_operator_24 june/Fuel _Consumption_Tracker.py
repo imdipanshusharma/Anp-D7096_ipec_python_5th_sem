@@ -1,4 +1,5 @@
-# Input from user
+# Input from user fuel consumption tracker
+
 distance = float(input("Enter total distance traveled (km): "))
 fuel = float(input("Enter fuel consumed (liters): "))
 
