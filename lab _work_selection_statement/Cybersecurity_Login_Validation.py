@@ -1,4 +1,6 @@
 ''' Cybersecurity Login Validation 
+#code to validate login credentials for a user in a secure manner.
+
 Problem Statement 
 A login system validates: 
 • Username  
