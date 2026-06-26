@@ -1,4 +1,5 @@
 ''' Employee Performance Evaluation 
+#employee is evaluated based on project score, attendance percentage, and client feedback score.
 Problem Statement 
 An employee is evaluated using: 
 • Project Score  
