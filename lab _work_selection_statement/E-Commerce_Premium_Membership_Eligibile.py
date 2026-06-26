@@ -1,4 +1,5 @@
-'''E-Commerce Premium Membership Eligibility 
+'''E-Commerce Premium Membership Eligibility
+#e-commerce platform offers premium membership to customers based on their purchase history, order completion, and customer rating. 
 Problem Statement 
 A customer becomes Premium Member if: 
 • Total Purchases > ₹50,000  
