@@ -4,6 +4,7 @@ Write a Python program that accepts three angles (in degrees) from the user
 and check whether they form a valid triangle.
 If they form a traingle then also display the type of triangle being formed.
 -------------------------------------------------------------'''
+#types of teriangle based on angles:
 #------- Coding ---------------
 #input of first angle from the user
 angle1 = float(input("Enter first angle(in degrees) :"))
