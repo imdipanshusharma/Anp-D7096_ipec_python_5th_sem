@@ -5,7 +5,7 @@
 ------Marks 90 and above → Grade A-----
 ------Marks 75 to 89 → Grade B------
 ------Marks 50 to 74 → Grade C------
-------Below 50 → Grade F-----
+------Below 50 → Grade F-------
 
 -----Sample Input-----
 -----Enter Marks: 92-----
