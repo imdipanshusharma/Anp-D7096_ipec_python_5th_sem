@@ -1,4 +1,4 @@
-# Program to calculate Compound Interest
+# Program to calculate Compound Interest .
 
 P = float(input("Enter the Principal amount: "))
 R = float(input("Enter the Annual Interest Rate (%): "))
