@@ -1,5 +1,5 @@
-# A school assigns grades based on the marks obtained by students according to the following criteria:
-
+#A school assigns grades based on the marks obtained by students according to the following criteria:
+#please write a Python program to accept marks from the user and display the corresponding grade.
 '''problem statement :Write a Python program to accept marks from the user and display the corresponding grade.
 
 ------Marks 90 and above → Grade A-----
