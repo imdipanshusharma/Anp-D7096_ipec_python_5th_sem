@@ -1,4 +1,6 @@
 # Input from user
+#input
+
 current_balance = float(input("Enter current balance: "))
 withdrawal_amount = float(input("Enter withdrawal amount: "))
 
