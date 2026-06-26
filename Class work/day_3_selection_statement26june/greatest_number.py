@@ -1,5 +1,5 @@
 ''' Program to find out greatest number between two number'''
-#input of first number from user
+#input of first number from the user
 num1 = int(input("Enter first number : "))
 #-----------------------------------------
 #input of second number from the user
