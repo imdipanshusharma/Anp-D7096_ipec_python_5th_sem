@@ -1,4 +1,6 @@
 # Input from user
+#update
+
 total_students = int(input("Enter total number of students: "))
 students_per_row = int(input("Enter number of students per row: "))
 
