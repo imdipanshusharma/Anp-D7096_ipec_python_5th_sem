@@ -23,8 +23,7 @@ for i in t:
         # Print the odd number
         print(i)
 
-
-        '''Enter Number: 25
+'''Enter Number: 25
 Enter Number: 52
 Enter Number: 25
 Enter Number: 25
