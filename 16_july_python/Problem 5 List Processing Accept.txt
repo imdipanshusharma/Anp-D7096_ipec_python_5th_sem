@@ -1,0 +1,40 @@
+Problem 5: List Processing Accept 20 integers from the user into a list
+
+Perform the following: 
+a) Print largest number  
+b) Print second largest number  
+c) Print smallest number  
+d) Remove duplicate elements  
+e) Print only even numbers  
+f) Print numbers divisible by both 3 and 5  
+g) Reverse the list without using reverse()  
+
+#--------------------coding-------------------
+
+numbers = []
+
+for i in range(20):
+    num = int(input("Enter number: "))
+    numbers.append(num)
+
+print("Largest =", max(numbers))
+
+unique = sorted(set(numbers))
+print("Second Largest =", unique[-2])
+
+print("Smallest =", min(numbers))
+
+print("Without Duplicates =", list(set(numbers)))
+
+print("Even Numbers:")
+for i in numbers:
+    if i % 2 == 0:
+        print(i, end=" ")
+
+print("\nDivisible by 3 and 5:")
+for i in numbers:
+    if i % 3 == 0 and i % 5 == 0:
+        print(i, end=" ")
+
+print("\nReversed List:")
+print(numbers[::-1])

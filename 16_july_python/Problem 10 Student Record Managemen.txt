@@ -1,0 +1,134 @@
+Problem 10: Student Record Management System 
+Create a menu-driven application. 
+Each student should have: 
+• Roll Number  
+• Name  
+• Age  
+• Course  
+• Marks  
+
+Store records using a list of dictionaries. 
+Menu: 
+1. Add Student 
+2. Display All Students 
+3. Search Student by Roll Number 
+4. Update Marks 
+5. Delete Student 
+6. Display Topper 
+7. Display Average Marks 
+8. Display Students Above Average 
+9. Exit Requirements: 
+
+• Implement each menu option using separate user-defined functions.  
+• Validate duplicate roll numbers.  
+• Handle invalid menu choices.  
+• Keep displaying the menu until the user selects Exit.  
+
+#---------------------coding------------------------------
+
+
+students = []
+
+def add_student():
+    roll = int(input("Roll Number: "))
+
+    for s in students:
+        if s["roll"] == roll:
+            print("Duplicate Roll Number!")
+            return
+
+    name = input("Name: ")
+    age = int(input("Age: "))
+    course = input("Course: ")
+    marks = int(input("Marks: "))
+
+    students.append({
+        "roll": roll,
+        "name": name,
+        "age": age,
+        "course": course,
+        "marks": marks
+    })
+
+def display():
+    for s in students:
+        print(s)
+
+def search():
+    roll = int(input("Enter Roll Number: "))
+    for s in students:
+        if s["roll"] == roll:
+            print(s)
+            return
+    print("Not Found")
+
+def update():
+    roll = int(input("Enter Roll Number: "))
+    for s in students:
+        if s["roll"] == roll:
+            s["marks"] = int(input("New Marks: "))
+            print("Updated")
+            return
+    print("Not Found")
+
+def delete():
+    roll = int(input("Enter Roll Number: "))
+    for s in students:
+        if s["roll"] == roll:
+            students.remove(s)
+            print("Deleted")
+            return
+    print("Not Found")
+
+def topper():
+    if students:
+        top = max(students, key=lambda x: x["marks"])
+        print(top)
+
+def average():
+    if students:
+        avg = sum(s["marks"] for s in students) / len(students)
+        print("Average =", avg)
+
+def above_average():
+    if students:
+        avg = sum(s["marks"] for s in students) / len(students)
+        for s in students:
+            if s["marks"] > avg:
+                print(s)
+
+while True:
+
+    print("\n1.Add Student")
+    print("2.Display All")
+    print("3.Search")
+    print("4.Update Marks")
+    print("5.Delete")
+    print("6.Display Topper")
+    print("7.Display Average")
+    print("8.Above Average")
+    print("9.Exit")
+
+    choice = int(input("Enter Choice: "))
+
+    if choice == 1:
+        add_student()
+    elif choice == 2:
+        display()
+    elif choice == 3:
+        search()
+    elif choice == 4:
+        update()
+    elif choice == 5:
+        delete()
+    elif choice == 6:
+        topper()
+    elif choice == 7:
+        average()
+    elif choice == 8:
+        above_average()
+    elif choice == 9:
+        print("Program Ended")
+        break
+    else:
+        print("Invalid Choice")
