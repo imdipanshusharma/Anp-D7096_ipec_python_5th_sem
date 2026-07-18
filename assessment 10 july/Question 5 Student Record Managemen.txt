@@ -1,0 +1,161 @@
+Question 5: Student Record Management System (10 Marks)
+Write a Python program to manage student records. 
+Each student's data should contain: 
+• Roll Number  
+• Name  
+• Marks  
+
+Store all records using a dictionary where the roll number is the key. 
+Display the following menu repeatedly: 
+1. Add Student 
+2. Search Student 
+3. Display All Students
+4. Exit
+
+
+Requirements: 
+• Use a while loop for the menu.  
+• Use functions for each operation.  
+• Display "Record Not Found" if the roll number does not exist.  
+• Exit the program when the user selects option 
+
+
+
+Sample Output 
+1. Add Student 
+2. Search Student 
+3. Display All Students 
+4. Exit  Enter Choice : 
+
+
+
+Enter Choice : 1 
+
+Roll No : 101
+Name : Rahul 
+Marks : 88  
+Student Added Successfully 
+ 
+
+
+Enter Choice : 2  
+Enter Roll No : 101 
+Roll No : 101 
+Name : Rahul 
+Marks : 88 
+
+
+
+#----------------------------coding---------------------------------
+
+[12:32 pm, 10/7/2026] Dipanshu Sharma: def count_vowels(sentence):
+    vowels = "aeiouAEIOU"
+    count = 0
+    for ch in sentence:
+        if ch in vowels:
+            count += 1
+    return count
+
+def count_consonants(sentence):
+    count = 0
+    for ch in sentence:
+        if ch.isalpha() and ch.lower() not in "aeiou":
+            count += 1
+    return count
+
+def count_words(sentence):
+    words = sentence.split()
+    return len(words)
+
+def reverse_sentence(sentence):
+    return sentence[::-1]
+
+# Main Program
+sentence = input("Enter a sentence: ")
+
+print("Vowels:", count_vowels(sentence))
+print("Consonants:", count_consonants(sentence))
+print("Words:", count_words(sentence))
+print("Reverse:", reverse_sentence(sentence))
+[12:33 pm, 10/7/2026] Dipanshu Sharma: # Student Record Management System
+
+students = {}
+
+def add_student():
+    roll = int(input("Enter Roll No: "))
+    name = input("Enter Name: ")
+    marks = float(input("Enter Marks: "))
+
+    students[roll] = {"Name": name, "Marks": marks}
+    print("Student Added Successfully")
+
+def search_student():
+    roll = int(input("Enter Roll No: "))
+
+    if roll in students:
+        print("Roll No:", roll)
+        print("Name:", students[roll]["Name"])
+        print("Marks:", students[roll]["Marks"])
+    else:
+        print("Record Not Found")
+
+def display_students():
+    if len(students) == 0:
+        print("No Records Found")
+    else:
+        print("\nStudent Records")
+        for roll, data in students.items():
+            print("Roll No:", roll)
+            print("Name:", data["Name"])
+            print("Marks:", data["Marks"])
+            print()
+
+while True:
+    print("\n----- Student Record Management System -----")
+    print("1. Add Student")
+    print("2. Search Student")
+    print("3. Display All Students")
+    print("4. Exit")
+
+    choice = int(input("Enter Choice: "))
+
+    if choice == 1:
+        add_student()
+    elif choice == 2:
+        search_student()
+    elif choice == 3:
+        display_students()
+    elif choice == 4:
+        print("Thank You")
+        break
+    else:
+        print("Invalid Choice")
+
+#-------------------------------output----------------------------------
+
+Sample Output 
+1. Add Student 
+2. Search Student 
+3. Display All Students 
+4. Exit  Enter Choice : 
+
+
+
+Enter Choice : 1 
+
+Roll No : 101
+Name : Rahul 
+Marks : 88  
+Student Added Successfully 
+ 
+
+
+Enter Choice : 2  
+Enter Roll No : 101 
+Roll No : 101 
+Name : Rahul 
+Marks : 88 
+
+
+
+ 
